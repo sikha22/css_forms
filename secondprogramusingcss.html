@@ -1,0 +1,66 @@
+<!--Create a html form and create one fieldset for signup ,
+in that create three fields like username, password, and email.
+Create another fieldset with image upload option, checkboxes for
+asking hobbies and radio buttons for gender, text area for feedback,
+with submit and reset button. Use CSS wherever necessary-->
+<!doctype html>
+<html>
+<head>
+<title>task</title>
+<style>
+body {
+background-color: powderblue;
+color: black;
+}
+</style>
+</head>
+<body>
+<form>
+<fieldset>
+<fieldset>
+USER NAME:<br>
+<input type="text" name="username" ><br> <br>
+EMAIL:<br>
+<input type="text" name="email" ><br><br>
+PASSWORD:<br>
+<input type="password" id="pwd" name="pwd"><br><br>
+<p>Click the button</p>
+<input type="submit" value="submit" onclick=window.open>
+<input type="reset" name="reset" value="Reset">
+</fieldset><br><br>
+<fieldset>
+<form action="upload.php">
+<label for="myfile">Select an image:</label>
+<input type="file" id="myfile" name="myfile"><br><br>
+<form action="action_page.php">
+<input type="checkbox" id="hobby1" name="hobby1" value="dancing">
+<label for="hobby1"> my hobby is dancing</label><br>
+
+<input type="checkbox" id="hobby2" name="hobby2" value="painting">
+<label for="hobby2"> my hobby is painting</label><br>
+
+<input type="checkbox" id="hobby3" name="hobby3" value="singing">
+<label for="hobby3"> my hobby is singing</label><br><br>
+
+<p> SELECT YOUR GENDER:</p>
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label><br>
+
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label><br>
+
+<input type="radio" id="other" name="gender" value="other">
+<label for="other">Other</label><br><br>
+
+FEEDBACK:<br>
+<input type="text" id="feed" name="feed"><br><br>
+
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+</fieldset>
+
+
+</fieldset>
+</form>
+</body>
+</html>
